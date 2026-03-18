@@ -12,4 +12,14 @@ class TaskTimer extends Model
         'start_time',
         'end_time',
     ];
+
+    public function task()
+    {
+        return $this->belongsTo(Task::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

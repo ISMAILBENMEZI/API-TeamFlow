@@ -11,4 +11,14 @@ class Project extends Model
         'name',
         'description',
     ];
+
+    public function workspace()
+    {
+        return $this->belongsTo(workspace::class);
+    }
+
+    public function tasks()
+    {
+        return $this->hasMany(Task::class);
+    }
 }
