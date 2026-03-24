@@ -13,6 +13,7 @@ class Task extends Model
         'priority',
         'assigned_to',
         'deadline',
+        'description',
     ];
 
     public function project()
